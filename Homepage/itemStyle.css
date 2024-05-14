@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Open Sans';
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    overflow: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.carousel{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 15%;
+    z-index: -1;
+}
+.image-container{
+    display: flex;
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+    
+}
+img{
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 24px;
+
+
+}
+
+.btn-{
+    background-color: #09f;
+    color: white;
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+    margin: 10px;
+    width: 200px;
+}
+.btn-:hover{
+    opacity: 0.9;
+}
+.btn-:focus{
+    outline: none;
+}
+.nav{
+    position: relative;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3 ease-in-out;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all .3s ease-in-out;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+}
+
+.nav a.current{
+    color: aqua;
+}
+.content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 24px;
+
+}
+.left{
+    width: 50%;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    color: wheat;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.delivery, .order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 24px;
+}
+.delivery > h3,
+.order-container > h3
+{
+    margin: 24px;
+}
+.order-container > div{
+    margin: 8px;
+}
+
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=email]{
+    box-sizing: border-box;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+input[type=submit] {
+    width: 150px;
+    background-color: rgb(230, 59, 50);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    top: -20px;
+}
+input[type=submit]:hover {
+    opacity: .9;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: -60px;
+}

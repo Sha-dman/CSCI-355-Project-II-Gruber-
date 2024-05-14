@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="itemStyle.css">
+    
+</head>
+<body style="background-image: url('../images/bbg.jpeg');">
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><img src="images/icon.png" alt=""></a></h1>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html" class="current">Order</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="left">
+    <div class="carousel">
+        <div class="image-container" id="imgs">
+            <img src="https://plus.unsplash.com/premium_photo-1674670904769-544b31893a15?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2VyfGVufDB8fDB8fHww" alt="front">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww" alt="rear">
+            <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D" alt="interior">
+        </div>
+        </div>
+        <div class="btn-container">
+            <button id="back" class="btn-">Prev</button>
+            <button id="next" class="btn-">Next</button>
+        </div>
+        </div>
+
+        <div class="right">
+            <h1 style="padding: 8px;">Our Famous Burgers</h1>
+            <h2 style="padding: 14px; position: relative; right: 40%;font-size: 32px;">$24.99</h2>          
+            <form action="connect.php" method="POST">
+            <section class="delivery">
+                <h3>Where should we deliver:</h3>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Full name here">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone">
+        
+                    </div>
+
+                    <div>
+                        <label for="contact-pref">How should we contact you?</label>
+                        <input type="checkbox" name="call" id="call">
+                        <label for="call">Call</label>
+                        <input type="checkbox" name="text" id="text">
+                        <label for="text">Text</label>
+                        <input type="checkbox" name="email" id="email">
+                        <label for="email">Email</label>
+        
+                    </div>
+
+                    <div>
+                        <label for="street">Street:</label>
+                        <input type="text" name="street" id="street">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="state">
+                        <div style="margin: 8px;text-align: center;">
+                            <label for="zip">Zipcode:</label>
+                            <input type="number" name="zip" id="zip">                
+    
+                        </div>
+        
+        
+                    </div>
+            </section>
+
+            <section class="order-container">
+                <h1>Please make you choices below!</h1>
+
+                <div class="order">
+
+
+                <label for="sauce">Sauce</label>
+                <select name="sauce" id="sauce">
+                    <option value="choose">Choose</option>
+                    <option value="ketchup">Ketchup</option>
+                    <option value="bbq">BBQ</option>
+                    <option value="mustard">Mustard</option>
+                </select>
+                <label for="cheese">Cheese Amount:</label>
+                <select name="cheese" id="cheese">
+                    <option value="choose">Choose</option>
+                    <option value="none">No Cheese</option>
+                    <option value="normal">Normal Cheese</option>
+                    <option value="extra">Extra Cheese</option>
+                </select>
+            </div>
+            <div class="order">
+                <h3>Toppings</h3>
+                <label for="pickel">Pickels</label>
+                <input type="checkbox" name="pickel" id="pickel">
+                <label for="lettuce">Lettuce</label>
+                <input type="checkbox" name="lettuce" id="lettuce">
+                <label for="tomato">Tomatoes</label>
+                <input type="checkbox" name="tomato" id="tomato">
+                <label for="onions">Onions</label>
+                <input type="checkbox" name="onions" id="onions">
+            </div>
+
+
+            </section>
+
+            <input type="submit" name="submit" id="submit">
+
+
+           </form>
+        </div>
+    </div>
+        <script src="itemScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="itemStyle.css">
+    
+</head>
+<body style="background-image: url('../images/pbg.jpg');">
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="index.html"><img src="images/icon.png" alt=""></a></h1>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html" class="current">Order</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="left">
+    <div class="carousel">
+        <div class="image-container" id="imgs">
+            <img src="https://www.foodandwine.com/thmb/4qg95tjf0mgdHqez5OLLYc0PNT4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" alt="front">
+            <img src="https://www.southernliving.com/thmb/j_6gABRIAMegN6RFHxOgbUqBxjA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg" alt="rear">
+            <img src="https://recipes.net/wp-content/uploads/2024/01/how-to-eat-pineapple-on-pizza-1706342550.jpg" alt="interior">
+        </div>
+        </div>
+        <div class="btn-container">
+            <button id="back" class="btn-">Prev</button>
+            <button id="next" class="btn-">Next</button>
+        </div>
+        </div>
+
+        <div class="right">
+           <h1 style="padding: 8px;">Our Famous Pizza Pies!</h1>
+           <h2 style="padding: 14px; position: relative; right: 40%;font-size: 32px;">$19.99</h2>          
+           <form action="connect.php" method="POST">
+            <section class="delivery">
+                <h3>Where should we deliver:</h3>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Full name here">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone">
+        
+                    </div>
+
+                    <div>
+                        <label for="contact-pref">How should we contact you?</label>
+                        <input type="checkbox" name="call" id="call">
+                        <label for="call">Call</label>
+                        <input type="checkbox" name="text" id="text">
+                        <label for="text">Text</label>
+                        <input type="checkbox" name="email" id="email">
+                        <label for="email">Email</label>
+        
+                    </div>
+
+                    <div>
+                        <label for="street">Street:</label>
+                        <input type="text" name="street" id="street">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                        <label for="state">State:</label>
+                        <input type="text" name="state" id="state">
+                        <div style="margin: 8px;text-align: center;">
+                            <label for="zip">Zipcode:</label>
+                            <input type="number" name="zip" id="zip">                
+    
+                        </div>
+        
+        
+                    </div>
+            </section>
+
+            <section class="order-container">
+                <h1>Please make you choices below!</h1>
+
+                <div class="order">
+                <label for="size">Size</label>
+                <select name="size" id="size">
+                    <option value="choose">Choose</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <label for="sauce">Sauce</label>
+                <select name="sauce" id="sauce">
+                    <option value="choose">Choose</option>
+                    <option value="marinara">Marinara</option>
+                    <option value="bbq">BBQ</option>
+                    <option value="alfredo">Alfredo</option>
+                    <option value="garlic">Garlic</option>
+                </select>
+                <label for="cheese">Cheese Amount:</label>
+                <select name="cheese" id="cheese">
+                    <option value="choose">Choose</option>
+                    <option value="none">No Cheese</option>
+                    <option value="normal">Normal Cheese</option>
+                    <option value="extra">Extra Cheese</option>
+                </select>
+            </div>
+            <div class="order">
+                <h3>Protein</h3>
+                <label for="chicken">Chicken</label>
+                <input type="checkbox" name="chicken" id="chicken">
+                <label for="steak">Steak</label>
+                <input type="checkbox" name="steak" id="steak">
+                <label for="sausage">Italian Sausage</label>
+                <input type="checkbox" name="sausage" id="sausage">
+                <label for="peperoni">Peperoni</label>
+                <input type="checkbox" name="peperoni" id="peperoni">
+            </div>
+            <div class="order">
+                <h3>Veggies</h3>
+                <input type="checkbox" name="veggies" id="mushrooms" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" name="veggies" id="pineapple" value="pineapple">
+                <label for="pineapple">Pineapple</label>
+                <input type="checkbox" name="veggies" id="green-pepper" value="green-pepper">
+                <label for="green-pepper">Green Pepper</label>
+                <input type="checkbox" name="veggies" id="jalepeno" value="jalepeno">
+                <label for="jalepeno">Jalepeno </label><br>
+                <input type="checkbox" name="veggies" id="onions" value="onions">
+                <label for="onions">Onions</label><br>
+
+            </div>
+            </section>
+
+            <input type="submit" name="submit" id="submit">
+
+
+           </form>
+        </div>
+    </div>
+        <script src="itemScript.js"></script>
+</body>
+</html>
